@@ -68,6 +68,11 @@ There are three main components to this project.
 
 # Files
 
+[__Notebook 1__](/Files/ETL_Pipeline_Preparation_.ipynb) : ETL
+
+[__Notebook 2__](./FC_FINAL.ipynb) : feature classifier
+
+
 # Results_discussion
 
 <p align="center">
@@ -76,19 +81,19 @@ There are three main components to this project.
 
 ## Unballanced situation
 looking at the image above, it's clear we are dealing with a highly imballanced dataset where only 3 classes has more then 20% minority class ratio, and many classes are pretty much all labeled as False.
-This is not an easy situation, and among the techniques to deal with it I would emphasize the following (there are meny any more): 
+*This is not an easy situation, and among the techniques to deal with it I would emphasize the following (there are meny any more):*
 1. Data improvement:
-* Undersampling the Majority Class
-* Oversampling the Minority Class
-* Combine Data Undersampling and Oversampling
-* Cost-Sensitive Algorithms
-* Feature engineering
+ * Undersampling the Majority Class
+ * Oversampling the Minority Class
+ * Combine Data Undersampling and Oversampling
+ * Cost-Sensitive Algorithms
+ * Feature engineering
 2. Threshold-Moving for Imbalanced Classification:
-* Converting Probabilities to Class Labels
-* Threshold-Moving for Imbalanced Classification
-* Optimal Threshold for ROC Curve
-* Optimal Threshold for Precision-Recall Curve
-* Optimal Threshold Tuning
+ * Converting Probabilities to Class Labels
+ * Threshold-Moving for Imbalanced Classification
+ * Optimal Threshold for ROC Curve
+ * Optimal Threshold for Precision-Recall Curve
+ * Optimal Threshold Tuning
 
 At this point, no such techniques were used at this project, but I plan on improving the results in the near future.
 ## Precision vs. Recall
@@ -99,12 +104,14 @@ At this point, no such techniques were used at this project, but I plan on impro
 <img src="statis/accuracy.PNG" width=50% height=50% title="99% accuracy with little to no effort">
 </p>
 
-2.According to the imbalance in class (positive or negative) to to the topic, we will have to choose the right metric:
+2. According to the imbalance in class (positive or negative) to to the topic, we will have to choose the right metric:
  * Precision: Appropriate when minimizing false positives is the focus - apropriate classes that demand high reasource allocation but are not life saving.
  * Recall: Appropriate when minimizing false negatives is the focus - apropriate classes that are highly life saving.
  * F-Measure: provides a way to combine both precision and recall into a single measure that captures both properties.
  
-3.No single threshold can be acticated for al classes, and we will have to change threshold according to:
+3. No single threshold can be acticated for al classes, and we will have to change threshold according to:
  * Class imbalance (positive or negative).
  * Metric selection (logical class determines the metric).
  * use of ROC curves as indicators.
+
+LICENSE: This project is licensed under the terms of the esri license product. There is no approval to copy or use this code without permission
