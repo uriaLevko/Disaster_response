@@ -14,7 +14,7 @@ Analyzing Disaster response massages pipeline to classify type of call
 [***Results_discussion***](https://github.com/uriaLevko/Disaster_response#Results_discussion)
 
 <p align="center">
-<img src="statis/dis2.jpg" width=60% height=60% >
+<img src="statis/dis2.jpg" width=50% height=50% >
 </p>
 
 # Objective
@@ -92,16 +92,19 @@ This is not an easy situation, and among the techniques to deal with it I would 
 
 At this point, no such techniques were used at this project, but I plan on improving the results in the near future.
 ## Precision vs. Recall
-However, by undertanding that we are dealing with a highly imbalanced dataset, some point needs to be taken in considiration when analazig the current results:
+*by undertanding that we are dealing with a highly imbalanced dataset, some point needs to be taken in considiration when analazig the current results:*
+
 1. We can't use accuracy as a metric as it will produce excelent results due to the imbalance
 <p align="center">
 <img src="statis/accuracy.PNG" width=50% height=50% title="99% accuracy with little to no effort">
 </p>
-2.according to the imbalance in class (positive or negative) to to the topic, we will have to choose the right metric:
+
+2.According to the imbalance in class (positive or negative) to to the topic, we will have to choose the right metric:
  * Precision: Appropriate when minimizing false positives is the focus - apropriate classes that demand high reasource allocation but are not life saving.
  * Recall: Appropriate when minimizing false negatives is the focus - apropriate classes that are highly life saving.
  * F-Measure: provides a way to combine both precision and recall into a single measure that captures both properties.
-3.no single threshold can be acticated for al classes, and we will have to change threshold according to:
+ 
+3.No single threshold can be acticated for al classes, and we will have to change threshold according to:
  * Class imbalance (positive or negative).
  * Metric selection (logical class determines the metric).
  * use of ROC curves as indicators.
