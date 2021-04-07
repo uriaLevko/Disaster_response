@@ -14,7 +14,7 @@ Analyzing Disaster response massages pipeline to classify type of call
 [***Results_discussion***](https://github.com/uriaLevko/Disaster_response#Results_discussion)
 
 <p align="center">
-<img src="statis/dis.jpg" width=50% height=50% >
+<img src="statis/dis2.jpg" width=60% height=60% >
 </p>
 
 # Objective
@@ -69,5 +69,25 @@ There are three main components to this project.
 # Files
 
 # Results_discussion
+<p align="center">
+<img src="statis/newplot (1).png" width=100% height=100% >
+</p>
+## Unballanced situation
+looking at the image above, it's clear we are dealing with a highly imballanced dataset where only 3 classes has more then 20% minority class ratio, and many classes are pretty much all labeled as False.
+This is not an easy situation, and among the techniques to deal with it I would emphasize the following (there are meny any more): 
+1. Data improvement:
+* Undersampling the Majority Class
+* Oversampling the Minority Class
+* Combine Data Undersampling and Oversampling
+* Cost-Sensitive Algorithms
+* Feature engineering
+2. Threshold-Moving for Imbalanced Classification:
+* Converting Probabilities to Class Labels
+* Threshold-Moving for Imbalanced Classification
+* Optimal Threshold for ROC Curve
+* Optimal Threshold for Precision-Recall Curve
+* Optimal Threshold Tuning
 
+At this point, no such techniques were used at this project, but I plan on improve the results in the future.
 
+However, by analazing the current matrix, we can see some patterns
