@@ -35,6 +35,14 @@ The project includes a web app where an emergency worker can input a new message
 
 Below are a few screenshots of the web app.
 
+<div class="row">
+  <div class="column">
+    <img src="statis/sitetop.PNG" alt="topArea" style="width:40%">
+  </div>
+  <div class="column">
+    <img src="statis/sitedown.PNG" alt="downarea" style="width:40%">
+  </div>
+</div>
 
 # Components
 
