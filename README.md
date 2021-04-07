@@ -1,11 +1,6 @@
 # Disaster_response
 Analyzing Disaster response massages pipeline to classify type of call
 
-<p align="center">
-<img src="statis/dis.jpg" width=50% height=50% >
-</p>
-
-
 # Contents
 
 [***Objective***](https://github.com/uriaLevko/Disaster_response#objective)
@@ -16,6 +11,9 @@ Analyzing Disaster response massages pipeline to classify type of call
 
 [***Files***](https://github.com/uriaLevko/Disaster_response#files)
 
+<p align="center">
+<img src="statis/dis.jpg" width=50% height=50% >
+</p>
 
 # Objective
 
@@ -40,7 +38,6 @@ Below are a few screenshots of the web app.
 
 # Components
 
-## Project Components:
 There are three main components to this project.
 
 1. ETL Pipeline - process_data.py:
@@ -59,3 +56,5 @@ There are three main components to this project.
 3. Flask Web App -
 * classes data visualizations using Plotly in the web app.
 * input massage to get class classification
+
+# Files
