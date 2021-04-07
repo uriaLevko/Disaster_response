@@ -11,6 +11,8 @@ Analyzing Disaster response massages pipeline to classify type of call
 
 [***Files***](https://github.com/uriaLevko/Disaster_response#files)
 
+[***Results_discussion***](https://github.com/uriaLevko/Disaster_response#Results_discussion)
+
 <p align="center">
 <img src="statis/dis.jpg" width=50% height=50% >
 </p>
@@ -65,3 +67,7 @@ There are three main components to this project.
 * input massage to get class classification
 
 # Files
+
+# Results_discussion
+
+
