@@ -2,43 +2,60 @@
 Analyzing Disaster response massages pipeline to classify type of call
 
 <p align="center">
-<img src="supporting_files/airbnb.jpg" width=50% height=50% >
+<img src="statis/dis.jpg" width=50% height=50% >
 </p>
 
 
 # Contents
 
-[***Objective***](https://github.com/uriaLevko/AirBNB_boston_analysis#objective)
+[***Objective***](https://github.com/uriaLevko/Disaster_response#objective)
 
-[***Overview***](https://github.com/uriaLevko/AirBNB_boston_analysis#overview)
+[***Overview***](https://github.com/uriaLevko/Disaster_response#overview)
 
-[***Concepts***](https://github.com/uriaLevko/AirBNB_boston_analysis#concepts)
+[***Components***](https://github.com/uriaLevko/Disaster_response#Components)
 
-[***Files***](https://github.com/uriaLevko/AirBNB_boston_analysis#files)
+[***Files***](https://github.com/uriaLevko/Disaster_response#files)
 
 
 # Objective
 
-focusing on listing data frame:
+* machine learning pipeline to categorize disaster events
+* send the messages to an appropriate disaster relief agency
+* disply results in webapp
+* provide an API to improve Dataset (on progress)
 
-1. What numeric and category features affect the price?
-2. Can text features be modified to check for correlation with the price?
-3. Can we detect spatial correlation with price?
-4. what are the nonsighnificant and multi coliniaril features?
-5. Does removing those features improves the model results?
 
 # Overview
 
-You are welcom to read the full analysis in medium on:
-In this project, I used the *listing data* availible in https://www.kaggle.com/airbnb/boston/ to try and answer some qustions regardin pattern in the data.<br>
-Finally, I've trained a basic linear model to determine whether its possible to predict a price using this data.
+In this project, I analyzed disaster data provided by <a href='https://appen.com/'>Figure Eight</a> to build a model for an API that classifies disaster messages.
+
+The Project dataset contained real messages that were sent during disaster events. 
+
+The aim is creating a machine learning pipeline to categorize these events so that its possible to send the messages to an appropriate disaster relief agency.
+
+The project includes a web app where an emergency worker can input a new message and get classification results in several categories.
+
+Below are a few screenshots of the web app.
 
 
-# Concepts
+# Components
 
-During the process of analysis, I decided to put a lot of focus on presenting as little code as possible in the notebook.<br>
-I also wanted to be able to use same analysis on different parts of data, in a fast and easy way, in order to be able to find patterns more easily.<br>
-To echive those goals, I wrote quite alot of helper functions, designed spesificaly to help in this work flow.<br>
-In addition, I wrote a Class to help me with 2 extra demanding topics:<br>
-* Text preprocessing, visualization and analysis
-* Feature selection and Model activation
+## Project Components:
+There are three main components to this project.
+
+1. ETL Pipeline - process_data.py:
+* Loads the messages and categories datasets
+* Merges the two datasets
+* Cleans the data
+* Stores it in a SQLite database
+
+2. ML Pipeline - train_classifier.py, a machine learning pipeline that:
+* Loads data from the SQLite database
+* Splits the dataset into training and test sets
+* Builds a text processing and machine learning pipeline
+* Trains and tunes a model using GridSearchCV
+* Outputs results on the test set
+* Exports the final model as a pickle file
+3. Flask Web App -
+* classes data visualizations using Plotly in the web app.
+* input massage to get class classification
