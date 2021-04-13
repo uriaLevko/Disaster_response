@@ -7,6 +7,8 @@ Analyzing Disaster response massages pipeline to classify type of call
 
 [***Overview***](https://github.com/uriaLevko/Disaster_response#overview)
 
+[***Metrics Meaning***](https://github.com/uriaLevko/Disaster_response#Metrics_in_the_Disaster_response_domain)
+
 [***Components***](https://github.com/uriaLevko/Disaster_response#Components)
 
 [***Files***](https://github.com/uriaLevko/Disaster_response#files)
@@ -44,6 +46,41 @@ Below are a few screenshots of the web app.
 <td> <img src="statis/sitedown.PNG" title="appdown" style="width: 250px;"/> </td>
     <td></td><td></td>
 </tr></table>
+
+# Metrics_in_the_Disaster_response_domain 
+
+<table >
+
+  <tr>
+    <th style="background-color:gray">Metric</th>
+     <th style="background-color:gray" >What does that even means</th>
+    <th style="background-color:#00FF00">Why it's OK</th>
+    <th style="background-color:red">Why it's NOT OK</th>
+    <th style="background-color:orange">What should we do?</th>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2">Precision</td>
+    <td>Low precision means we will get a high False Positive rate</td>
+    <td rowspan="2">In case of irrelevance  - the call would just be ignored </td>
+    <td>In case of Disaster  - many calls will be sent, and that may cause an unnecessary load</td>
+    <td rowspan="2">For classes that are'nt life or resource allocation crucial - medium to high threshold should be chosen</td>
+  </tr>
+  <tr>
+    <td>Practically, that means we will send a wrong agency the message call.</td>
+    <td>There could be a situation where an agency sends resources by mistake - that might cause an insufficient resource allocation for the real needed calls</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2">Recall</td>
+    <td >Low Recall means a High False Negative rate</td>
+    <td rowspan="2">Some topics are not crucial and can go undetected like reports that aren’t important for help</td>
+    <td >practically - that means agencies will not get the distress call - because it will be classified as False by mistake</td>
+    <td rowspan="2">For classes that Are life or resource allocation crucial - low to  threshold should be chosen</td>
+    </tr>
+    <tr>
+    <td >In case of emergency, its crucial not to miss any stress calls that revolve saving life’s</td>
+    <td >In this domain - for life saving classes, there soul'd be an attempt to get the lowest FN rate as possible</td>
+    </tr>
+</table>
 
 # Components
 
@@ -97,6 +134,7 @@ looking at the image above, it's clear we are dealing with a highly imballanced 
 
 At this point, no such techniques were used at this project, but I plan on improving the results in the near future.
 ## Precision vs. Recall
+
 *by undertanding that we are dealing with a highly imbalanced dataset, some point needs to be taken in considiration when analazig the current results:*
 
 1. We can't use accuracy as a metric as it will produce excelent results due to the imbalance
