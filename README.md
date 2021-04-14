@@ -60,24 +60,24 @@ Below are a few screenshots of the web app.
   </tr>
   <tr>
     <td colspan="1" rowspan="2">Precision</td>
-    <td>Low precision means we will get a high False Positive rate</td>
+    <td>Precision is the measure of how many of our predicted positive (ypred=1) actually were positive (y=1)</td>
     <td rowspan="2">In case of irrelevance  - the call would just be ignored </td>
     <td>In case of Disaster  - many calls will be sent, and that may cause an unnecessary load</td>
     <td rowspan="2">For classes that are'nt life or resource allocation crucial - medium to high threshold should be chosen</td>
   </tr>
   <tr>
-    <td>Practically, that means we will send a wrong agency the message call.</td>
+    <td>Practically, low rate means we will send many wrong calls to agencies</td>
     <td>There could be a situation where an agency sends resources by mistake - that might cause an insufficient resource allocation for the real needed calls</td>
   </tr>
   <tr>
     <td colspan="1" rowspan="2">Recall</td>
-    <td >Low Recall means a High False Negative rate</td>
+    <td >how many actual positives (y=1) we predicted as positive (y=0)</td>
     <td rowspan="2">Some topics are not crucial and can go undetected like reports that aren’t important for help</td>
     <td >practically - that means agencies will not get the distress call - because it will be classified as False by mistake</td>
     <td rowspan="2">For classes that Are life or resource allocation crucial - low to  threshold should be chosen</td>
     </tr>
     <tr>
-    <td >In case of emergency, its crucial not to miss any stress calls that revolve saving life’s</td>
+    <td >Low Recall means a High False Negative rate. In case of emergency, its crucial not to miss any stress calls that revolve saving life’s</td>
     <td >In this domain - for life saving classes, there soul'd be an attempt to get the lowest FN rate as possible</td>
     </tr>
 </table>
