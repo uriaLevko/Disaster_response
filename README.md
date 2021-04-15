@@ -107,7 +107,7 @@ There are three main components to this project.
 
 [__Notebook 1__](/Files/ETL_Pipeline_Preparation_.ipynb) : ETL
 
-[__Notebook 2__](./FC_FINAL.ipynb) : feature classifier
+[__Notebook 2__](Files/ML Pipeline Preparation_up.ipynb) : ML Pipeline
 
 
 # Results_discussion
