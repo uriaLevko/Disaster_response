@@ -11,7 +11,7 @@ Analyzing Disaster response massages pipeline to classify type of call
 
 [***Components***](https://github.com/uriaLevko/Disaster_response#Components)
 
-[***Files***](https://github.com/uriaLevko/Disaster_response#files)
+[***Files***](https://github.com/uriaLevko/Disaster_response#Files)
 
 [***Results_discussion***](https://github.com/uriaLevko/Disaster_response#Results_discussion)
 
