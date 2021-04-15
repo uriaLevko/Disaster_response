@@ -107,7 +107,7 @@ There are three main components to this project.
 
 [__Notebook 1__](/Files/ETL_Pipeline_Preparation_.ipynb) : ETL
 
-[__Notebook 2__](/Files/ML_Pipeline_Preparation_up.ipynb) : ML Pipeline
+[__Notebook 2__](/Files/ML_Pipeline_PreparationF.ipynb) : ML Pipeline
 
 
 # Results_discussion
@@ -159,6 +159,6 @@ At this point, no such techniques were used at this project, but I plan on impro
 <td> <img src="statis/afterThresh.PNG" title="After Thresh Tuning" style="width: 250px;"/> </td>
     <td></td><td></td>
 </tr></table> -->
-<img src="statis/beforeThresh.PNG" title="Before Thresh Tuning" style="width: 350px;"/>
+<img src="statis/beforeThreshup.PNG" title="Before Thresh Tuning" style="width: 350px;"/>
 <img src="statis/afterThresh.PNG" title="After Thresh Tuning" style="width: 250px;"/> 
 LICENSE: This project is licensed under the terms of the esri license product. There is no approval to copy or use this code without permission
