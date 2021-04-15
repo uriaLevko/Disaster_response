@@ -107,7 +107,7 @@ There are three main components to this project.
 
 [__Notebook 1__](/Files/ETL_Pipeline_Preparation_.ipynb) : ETL
 
-[__Notebook 2__](/Files/ML Pipeline PreparationF.ipynb) : ML Pipeline
+[__Notebook 2__](/Files/ML_Pipeline_PreparationF.ipynb) : ML Pipeline
 
 [__Complete_Project__](/Files/disaster-response-pipeline-project): Full project
 
