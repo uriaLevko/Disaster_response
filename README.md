@@ -151,6 +151,7 @@ At this point, no such techniques were used at this project, but I plan on impro
  * Class imbalance (positive or negative).
  * Metric selection (logical class determines the metric).
  * use of ROC curves as indicators.
+4. Below there is a comparison of Threshold tuning with effect on the results. The impact is dramatic.
  
 <!-- <table><tr>
 <td> <img src="statis/beforeThresh.PNG" title="Before Thresh Tuning" style="width: 350px;"/> </td>
