@@ -16,9 +16,9 @@ Analyzing Disaster response massages pipeline to classify type of call
 [***Results_discussion***](https://github.com/uriaLevko/Disaster_response#Results_discussion)
 
 <p align="center">
-<img src="statis/dis2.jpg" width=50% height=50% >
+<img src="statis/dis3.jpg">
 </p>
-
+ 
 # Objective
 
 * machine learning pipeline to categorize disaster events
