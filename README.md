@@ -109,6 +109,8 @@ There are three main components to this project.
 
 [__Notebook 2__](/Files/ML_Pipeline_PreparationF.ipynb) : ML Pipeline
 
+[__Complete_Project__](/Files/disaster-response-pipeline-project): Full project
+
 
 # Results_discussion
 
