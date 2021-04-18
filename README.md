@@ -15,6 +15,8 @@ Analyzing Disaster response massages pipeline to classify type of call
 
 [***Results_discussion***](https://github.com/uriaLevko/Disaster_response#Results_discussion)
 
+[***Activation***](https://github.com/uriaLevko/Disaster_response#Activation)
+
 <p align="center">
 <img src="statis/dis3.jpg">
 </p>
@@ -155,12 +157,40 @@ At this point, no such techniques were used at this project, but I plan on impro
  * use of ROC curves as indicators.
 4. Below there is a comparison of Threshold tuning with effect on the results. The impact is dramatic.
  
-<!-- <table><tr>
-<td> <img src="statis/beforeThresh.PNG" title="Before Thresh Tuning" style="width: 350px;"/> </td>
-    <td></td><td></td>
-<td> <img src="statis/afterThresh.PNG" title="After Thresh Tuning" style="width: 250px;"/> </td>
-    <td></td><td></td>
-</tr></table> -->
 <img src="statis/beforeThreshup.PNG" title="Before Thresh Tuning" style="width: 350px;"/>
 <img src="statis/afterThresh.PNG" title="After Thresh Tuning" style="width: 250px;"/> 
+
+# Activation
+
+1. Install the dependencies:
+ If you are running this in your local environment, run conda install --file requirements.txt
+ Or pip install -r requirements.txt to install the required python module dependencies
+ 
+2. Instructions:
+  Run the following commands in the project's root directory to set up database and model.
+  
+* To run ETL pipeline that cleans data and stores in database:<br>
+  python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+* To run ML pipeline that trains classifier and saves it as pickle file:<br>
+  python train_classifier.py data/DisasterResponse.db models/classifier.pkl
+  
+ 3.Running the Web App from the Project Workspace IDE:
+ 
+ * Step 1: Type in the command line: python run.py
+ * Step 2: Open another Terminal Window, Type: env|grep WORK
+ * Step 3: In a new web browser window, type in the following: https://SPACEID-3001.SPACEDOMAIN where SPACEID & SPACEDOMAIN are shown in step 2.
+
+ 4. File Descriptions:
+ * app-->
+  - app -- template - master.html - main page of web app - go.html - classification result page of web app
+  - app -- run.py - Flask file that runs app
+ * data-->
+  - disaster_categories.csv – file containing the categories
+  - disaster_messages.csv – file containing disaster messages to be categorized
+  - process_data.py – file containing data loaded code
+  - DisasterResponse.db - database to save the cleaned and categorized data
+ * models -->
+  - train_classifier.py – file containing ML pipeline
+  - classifier.pkl – model is saved in this pickle file
+  
 LICENSE: This project is licensed under the terms of the esri license product. There is no approval to copy or use this code without permission
